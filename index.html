@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MPH Builders | New Homes, Renovations & Commercial Builders Tasmania</title>
+  <meta name="description" content="MPH Builders — family-owned Tasmanian builders since 2004. New homes, renovations, extensions, heritage work & commercial builds across Hobart, Launceston and all of Tasmania. Master Builders award winners. Get a free quote today.">
+  <meta name="keywords" content="home builder tasmania, builder hobart, new home builder tas, renovations tasmania, commercial builder launceston, heritage builder tasmania, house builder hobart, extensions tasmania, builder launceston">
+  <link rel="canonical" href="https://www.mphbuilders.com.au/">
+  <meta property="og:title" content="MPH Builders | Tasmanian Home Builders Since 2004">
+  <meta property="og:description" content="Family-owned builders delivering quality new homes, renovations and commercial builds across Tasmania. Master Builders award winners.">
+  <meta property="og:image" content="https://www.mphbuilders.com.au/images/476891024_4026091244293438_8917841908609395506_n.jpg">
+  <meta property="og:url" content="https://www.mphbuilders.com.au/">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    *, *::before, *::after { border-radius: 0 !important; }
+
+    :root {
+      --dark-blue: #050505;
+      --mid-blue: #151515;
+      --navy: #111111;
+      --accent: #2c5ea0;
+      --accent-hover: #1e4a82;
+      --accent-light: #e8f0fa;
+      --black: #111;
+      --grey-900: #1c1c1c;
+      --grey-800: #333;
+      --grey-700: #444;
+      --grey-600: #666;
+      --grey-500: #888;
+      --grey-400: #999;
+      --grey-300: #b0b0b0;
+      --grey-200: #d4d4d4;
+      --grey-100: #ebebeb;
+      --grey-50: #f5f5f5;
+      --white: #ffffff;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      color: var(--grey-700);
+      background: var(--white);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: 'Anton', 'Arial Narrow', Impact, sans-serif;
+      font-weight: 400;
+      letter-spacing: 0.4px;
+      line-height: 1.15;
+      color: var(--navy);
+      text-transform: uppercase;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    img {
+      max-width: 100%;
+      display: block;
+      object-fit: cover;
+    }
+
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+    /* ─── TOP BAR ─── */
+    .top-bar {
+      background: var(--dark-blue);
+      padding: 10px 0;
+      font-size: 13px;
+      color: rgba(255,255,255,0.75);
+    }
+    .top-bar .container {
+      display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;
+    }
+    .top-bar a { color: rgba(255,255,255,0.9); transition: color 0.2s; }
+    .top-bar a:hover { color: #fff; }
+    .top-bar-left { display: flex; gap: 24px; align-items: center; }
+    .top-bar-right { display: flex; gap: 16px; align-items: center; }
+
+    /* ─── NAV ─── */
+    .navbar {
+      background: var(--white);
+      padding: 14px 0;
+      position: sticky; top: 0; z-index: 100;
+      border-bottom: 1px solid var(--grey-100);
+      box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+    }
+    .navbar .container {
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    .logo img { height: 52px; width: auto; }
+    .nav-links { display: flex; gap: 32px; align-items: center; list-style: none; }
+    .nav-links a {
+      font-size: 24px; font-weight: 500; color: var(--grey-600);
+      font-family: 'Anton', 'Arial Narrow', Impact, sans-serif;
+      letter-spacing: 0.6px; transition: color 0.2s;
+      text-transform: uppercase;
+    }
+    .nav-links a:hover { color: var(--navy); }
+    .nav-cta {
+      background: var(--accent);
+      color: var(--white) !important;
+      padding: 10px 22px;
+      border-radius: 0;
+      font-weight: 600;
+      transition: background 0.2s;
+    }
+    .nav-cta:hover { background: var(--accent-hover); }
+    .mobile-toggle { display: none; background: none; border: none; color: var(--navy); font-size: 24px; cursor: pointer; }
+
+    /* ─── HERO ─── */
+    .hero {
+      position: relative;
+      background: var(--dark-blue);
+      overflow: hidden;
+      padding: 56px 0 64px;
+    }
+    .hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: url('images/468220171_18023926856531429_4138000705472471590_n.jpg') center/cover no-repeat;
+      opacity: 0.48;
+    }
+    .hero .container {
+      position: relative;
+      display: grid;
+      grid-template-columns: 1fr 420px;
+      gap: 48px;
+      align-items: center;
+    }
+    .hero-text h1 {
+      font-size: 72px;
+      font-weight: 400;
+      letter-spacing: 0.6px;
+      margin-bottom: 18px;
+      color: var(--white);
+    }
+    .hero-text h1 span { color: #d6d6d6; }
+    .hero-text p {
+      font-size: 17px;
+      color: #FFFFFF;
+      max-width: 540px;
+      margin-bottom: 28px;
+      line-height: 1.7;
+    }
+    .hero-badges {
+      display: flex; gap: 24px; align-items: center; flex-wrap: wrap;
+    }
+    .hero-badge {
+      display: flex; gap: 8px; align-items: center;
+      font-size: 14px; color: #FFFFFF;
+    }
+    .hero-badge svg { flex-shrink: 0; color: #FFFFFF; }
+
+    /* ─── HERO FORM ─── */
+    .hero-form-card {
+      background: var(--white);
+      border-radius: 0;
+      padding: 32px 28px;
+      box-shadow: 0 16px 48px rgba(0,0,0,0.2);
+    }
+    .hero-form-card h3 {
+      font-size: 30px;
+      margin-bottom: 4px;
+      color: var(--navy);
+    }
+    .hero-form-card .form-sub {
+      font-size: 14px;
+      color: var(--grey-500);
+      margin-bottom: 20px;
+    }
+    .form-group { margin-bottom: 14px; }
+    .form-group label {
+      display: block; font-size: 13px; font-weight: 500;
+      color: var(--grey-700); margin-bottom: 5px;
+    }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 11px 14px;
+      background: var(--grey-50);
+      border: 1px solid var(--grey-200);
+      border-radius: 0;
+      color: var(--grey-800);
+      font-size: 14px;
+      font-family: inherit;
+      transition: border-color 0.2s;
+      outline: none;
+    }
+    .form-group input::placeholder,
+    .form-group textarea::placeholder { color: var(--grey-400); }
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus { border-color: var(--accent); background: var(--white); }
+    .form-group select {
+      cursor: pointer; appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%23666' viewBox='0 0 16 16'%3E%3Cpath d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 14px center;
+      background-color: var(--grey-50);
+    }
+    .form-group select option { background: var(--white); color: var(--grey-800); }
+    .form-group textarea { resize: vertical; min-height: 68px; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .btn-primary {
+      display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+      width: 100%;
+      padding: 13px 24px;
+      background: var(--accent);
+      color: var(--white);
+      font-size: 15px; font-weight: 600;
+      border: none; border-radius: 0;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.1s;
+      font-family: inherit;
+    }
+    .btn-primary:hover { background: var(--accent-hover); transform: translateY(-1px); }
+
+    /* ─── TRUST BAR ─── */
+    .trust-bar {
+      background: var(--grey-50);
+      border-bottom: 1px solid var(--grey-100);
+      padding: 22px 0;
+    }
+    .trust-bar .container {
+      display: flex; justify-content: center; align-items: center;
+      gap: 40px; flex-wrap: wrap;
+    }
+    .trust-item {
+      display: flex; align-items: center; gap: 10px;
+      font-size: 14px; color: var(--grey-600); font-weight: 500;
+    }
+    .trust-item svg { color: var(--accent); flex-shrink: 0; }
+    .trust-item img { height: 36px; opacity: 0.8; }
+
+    /* ─── SECTIONS ─── */
+    section { padding: 80px 0; }
+    .section-header { text-align: center; max-width: 640px; margin: 0 auto 48px; }
+    .section-header .label {
+      font-family: 'Anton', 'Arial Narrow', Impact, sans-serif;
+      font-size: 23px; font-weight: 400; text-transform: uppercase;
+      letter-spacing: 2px; color: var(--accent); margin-bottom: 12px;
+    }
+    .section-header h2 { font-size: 46px; font-weight: 400; margin-bottom: 16px; }
+    .section-header p { color: var(--grey-500); font-size: 16px; }
+
+    /* ─── SERVICES ─── */
+    .services { background: var(--white); }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .service-card {
+      background: var(--white);
+      border: 1px solid var(--grey-100);
+      border-radius: 0;
+      padding: 32px 28px;
+      transition: border-color 0.3s, box-shadow 0.3s, transform 0.2s;
+      text-align: center;
+    }
+    .service-card:hover {
+      border-color: var(--accent);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+      transform: translateY(-4px);
+    }
+    .service-icon {
+      width: 56px; height: 56px;
+      background: var(--accent-light);
+      border-radius: 0;
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 20px;
+    }
+    .service-icon svg { color: var(--accent); }
+    .service-card h3 { font-size: 28px; margin-bottom: 10px; font-weight: 400; }
+    .service-card p { font-size: 14px; color: var(--grey-500); line-height: 1.6; }
+
+    /* ─── ABOUT ─── */
+    .about { background: var(--grey-50); }
+    .about-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center;
+    }
+    .about-images {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 12px;
+    }
+    .about-images img {
+      border-radius: 0;
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      object-position: center;
+    }
+    .about-images img:first-child {
+      grid-column: 1 / -1;
+      height: 260px;
+    }
+    .about-content .label {
+      font-family: 'Anton', 'Arial Narrow', Impact, sans-serif;
+      font-size: 23px; font-weight: 400; text-transform: uppercase;
+      letter-spacing: 2px; color: var(--accent); margin-bottom: 12px;
+    }
+    .about-content h2 { font-size: 44px; font-weight: 400; margin-bottom: 20px; }
+    .about-content p { color: var(--grey-600); margin-bottom: 16px; font-size: 15px; }
+    .about-stats {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 28px;
+      border-top: 1px solid var(--grey-200); padding-top: 28px;
+    }
+    .stat-item { text-align: center; }
+    .stat-number { font-size: 42px; font-weight: 400; color: var(--accent); font-family: 'Anton', 'Arial Narrow', Impact, sans-serif; text-transform: uppercase; }
+    .stat-label { font-size: 13px; color: var(--grey-500); margin-top: 4px; }
+
+    /* ─── PORTFOLIO ─── */
+    .portfolio { background: var(--white); }
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+    }
+    .portfolio-grid a {
+      display: block;
+      border-radius: 0;
+      overflow: hidden;
+      position: relative;
+    }
+    .portfolio-grid a::before {
+      content: '';
+      display: block;
+      padding-top: 75%; /* 4:3 aspect ratio */
+    }
+    .portfolio-grid a:first-child {
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+    .portfolio-grid a:first-child::before {
+      padding-top: 100%;
+    }
+    .portfolio-grid img {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      transition: transform 0.4s;
+    }
+    .portfolio-grid a:hover img { transform: scale(1.05); }
+
+    /* ─── TESTIMONIALS ─── */
+    .testimonials { background: var(--grey-50); }
+    .testimonials-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
+    }
+    .testimonial-card {
+      background: var(--white);
+      border: 1px solid var(--grey-100);
+      border-radius: 0;
+      padding: 32px 28px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+    }
+    .testimonial-stars { color: #e8a910; font-size: 16px; margin-bottom: 16px; letter-spacing: 2px; }
+    .testimonial-card blockquote {
+      font-size: 14px; color: var(--grey-600); line-height: 1.7;
+      margin-bottom: 20px; font-style: italic;
+    }
+    .testimonial-author { font-size: 14px; font-weight: 600; color: var(--navy); }
+    .testimonial-role { font-size: 13px; color: var(--grey-400); }
+
+    /* ─── PREFERRED CONTRACTOR ─── */
+    .contractors {
+      background: var(--white);
+      border-top: 1px solid var(--grey-100);
+    }
+    .contractor-logos {
+      display: flex; justify-content: center; align-items: center;
+      gap: 20px; flex-wrap: wrap;
+    }
+    .contractor-logos span {
+      font-size: 13px; font-weight: 500; color: var(--grey-500);
+      white-space: nowrap; padding: 10px 18px;
+      border: 1px solid var(--grey-100); border-radius: 0;
+      background: var(--grey-50);
+    }
+
+    /* ─── CTA / FULL FORM ─── */
+    .cta-section {
+      background: var(--dark-blue);
+      position: relative;
+      overflow: hidden;
+    }
+    .cta-section::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: url('images/476891024_4026091244293438_8917841908609395506_n.jpg') center/cover no-repeat;
+      opacity: 0.42;
+    }
+    .cta-inner {
+      position: relative;
+      max-width: 720px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .cta-inner .label {
+      font-family: 'Anton', 'Arial Narrow', Impact, sans-serif;
+      font-size: 23px; font-weight: 400; text-transform: uppercase;
+      letter-spacing: 2px; color: #d6d6d6; margin-bottom: 12px;
+    }
+    .cta-inner h2 { font-size: 46px; font-weight: 400; margin-bottom: 12px; color: var(--white); }
+    .cta-inner > p { color: rgba(255,255,255,0.72); margin-bottom: 36px; font-size: 16px; }
+    .full-form {
+      background: var(--white);
+      border-radius: 0;
+      padding: 36px 32px;
+      text-align: left;
+      box-shadow: 0 16px 48px rgba(0,0,0,0.15);
+    }
+    .full-form .form-row-3 {
+      display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px;
+    }
+    .full-form textarea { min-height: 100px; }
+
+    /* ─── FOOTER ─── */
+    footer {
+      background: var(--navy);
+      padding: 56px 0 24px;
+    }
+    .footer-grid {
+      display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 40px;
+      margin-bottom: 40px;
+    }
+    .footer-brand p { color: rgba(255,255,255,0.5); font-size: 14px; margin-top: 16px; line-height: 1.7; }
+    .footer-brand img { height: 44px; }
+    .footer-col h4 {
+      font-size: 24px; font-weight: 400; text-transform: uppercase;
+      letter-spacing: 1px; margin-bottom: 16px; color: rgba(255,255,255,0.8);
+    }
+    .footer-col ul { list-style: none; }
+    .footer-col li { margin-bottom: 10px; }
+    .footer-col a { font-size: 14px; color: rgba(255,255,255,0.45); transition: color 0.2s; }
+    .footer-col a:hover { color: var(--white); }
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.08);
+      padding-top: 20px;
+      display: flex; justify-content: space-between; align-items: center;
+      font-size: 13px; color: rgba(255,255,255,0.3);
+    }
+
+    /* ─── RESPONSIVE ─── */
+    @media (max-width: 1024px) {
+      .hero .container { grid-template-columns: 1fr; }
+      .hero-text h1 { font-size: 50px; text-align: center; }
+      .hero-text p { text-align: center; margin: 0 auto 28px; }
+      .hero-badges { justify-content: center; }
+      .hero-form-card { max-width: 480px; margin: 0 auto; }
+      .services-grid { grid-template-columns: repeat(2, 1fr); }
+      .about-grid { grid-template-columns: 1fr; }
+      .testimonials-grid { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+    }
+
+    @media (max-width: 768px) {
+      .top-bar { display: none; }
+      .nav-links { display: none; }
+      .mobile-toggle { display: block; }
+      .hero { padding: 40px 0 48px; }
+      .hero-text h1 { font-size: 42px; }
+      .hero-text p { font-size: 16px; }
+      .services-grid { grid-template-columns: 1fr; }
+      .portfolio-grid { grid-template-columns: 1fr 1fr; }
+      .portfolio-grid a:first-child { grid-column: span 2; }
+      .form-row, .full-form .form-row-3 { grid-template-columns: 1fr; }
+      section { padding: 56px 0; }
+      .section-header h2 { font-size: 38px; }
+      .about-stats { grid-template-columns: repeat(3, 1fr); }
+      .footer-grid { grid-template-columns: 1fr; }
+      .footer-bottom { flex-direction: column; gap: 8px; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-bar-left">
+        <span>65 Meander Valley Hwy, Prospect TAS</span>
+        <a href="tel:0364342899">(03) 6344 2899</a>
+        <a href="mailto:info@mphbuilders.com.au">info@mphbuilders.com.au</a>
+      </div>
+      <div class="top-bar-right">
+        <span>Mon – Fri: 7:30am – 4:00pm</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="/" class="logo">
+        <img src="https://www.mphbuilders.com.au/images/Logo-small.png" alt="MPH Builders Tasmania — New Homes, Renovations and Commercial Builders" width="180" height="52">
+      </a>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/services">Services</a></li>
+        <li><a href="/testimonials">Testimonials</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact" class="nav-cta">Get a Quote</a></li>
+      </ul>
+      <button class="mobile-toggle" aria-label="Toggle navigation">&#9776;</button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-text">
+        <h1>Quality Builds.<br><span>Tasmanian Made.</span></h1>
+        <p>Family-owned and hands-on since 2004, MPH Builders deliver new homes, renovations and commercial builds across Tasmania — from Hobart to Launceston and everywhere in between.</p>
+        <div class="hero-badges">
+          <div class="hero-badge">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            Master Builders Award Winners
+          </div>
+          <div class="hero-badge">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+            20+ Years Experience
+          </div>
+          <div class="hero-badge">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            Servicing All of TAS
+          </div>
+        </div>
+      </div>
+      <div class="hero-form-card">
+        <h3>Get a Free Quote</h3>
+        <p class="form-sub">Tell us a bit about your project and we'll be in touch.</p>
+        <form action="/contact-us" method="post">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="hero-name">Your Name</label>
+              <input type="text" id="hero-name" name="name" placeholder="e.g. Sarah Jones" required>
+            </div>
+            <div class="form-group">
+              <label for="hero-phone">Phone Number</label>
+              <input type="tel" id="hero-phone" name="phone" placeholder="0400 000 000" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="hero-job">Type of Job</label>
+            <select id="hero-job" name="job_type" required>
+              <option value="" disabled selected>Select your project type</option>
+              <option value="new-home">New Home Build</option>
+              <option value="renovation">Renovation or Extension</option>
+              <option value="heritage">Heritage Listed Work</option>
+              <option value="commercial">Commercial Build</option>
+              <option value="outdoor">Outdoor Living (Deck, Pergola)</option>
+              <option value="site-works">Site Works</option>
+              <option value="maintenance">Maintenance</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="hero-details">Brief Details</label>
+            <textarea id="hero-details" name="details" placeholder="A quick outline — location, rough scope, anything useful." rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn-primary">
+            Request a Callback
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Bar -->
+  <div class="trust-bar">
+    <div class="container">
+      <div class="trust-item">
+        <img src="https://www.mphbuilders.com.au/images/masterbuilders.png" alt="Master Builders Tasmania member">
+        Master Builders Tasmania
+      </div>
+      <div class="trust-item">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        Fully Licensed &amp; Insured
+      </div>
+      <div class="trust-item">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+        Quality Assured &amp; OH&amp;S Accredited
+      </div>
+      <div class="trust-item">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a4 4 0 00-8 0v2"/></svg>
+        Domestic &amp; Commercial Accredited
+      </div>
+    </div>
+  </div>
+
+  <!-- Services -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header">
+        <div class="label">What We Do</div>
+        <h2>Building Across Tasmania Since 2004</h2>
+        <p>From your first home to a full commercial fit-out, we've got the crew, the experience and the local know-how to get it done right.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <h3>New Homes</h3>
+          <p>Whether it's your first build or your forever home, we work with you from plans to handover. Designed for Tassie conditions, built to last.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
+          </div>
+          <h3>Renovations &amp; Extensions</h3>
+          <p>Breathing new life into older homes is what we enjoy most. We'll help you keep the character and add the space you actually need.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16"/><path d="M1 21h22"/><path d="M9 7h1"/><path d="M9 11h1"/><path d="M9 15h1"/><path d="M14 7h1"/><path d="M14 11h1"/><path d="M14 15h1"/></svg>
+          </div>
+          <h3>Commercial Builds</h3>
+          <p>Preferred contractor for the Tasmanian Education Department, State Growth and Meander Valley Council. We know how to deliver on commercial projects — on time and on spec.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          </div>
+          <h3>Heritage Listed Work</h3>
+          <p>Tasmania's full of beautiful old buildings that deserve careful hands. We're experienced with heritage requirements and take the time to do it properly.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 10h-4V6"/><path d="M14 10l7.64-7.64"/><path d="M21 3v7h-7"/><path d="M3 21l7.64-7.64"/><circle cx="12" cy="12" r="2"/></svg>
+          </div>
+          <h3>Outdoor Living</h3>
+          <p>Decks, pergolas and outdoor entertaining areas — built to handle the Tassie weather and make the most of the view you've got.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          </div>
+          <h3>On-Call Maintenance</h3>
+          <p>We offer statewide on-call maintenance for commercial and government clients. When something needs sorting, we get there fast.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-images">
+          <img src="images/482087431_1200007342125631_4675229592007320712_n.jpg" alt="Completed residential building project by MPH Builders" loading="lazy">
+          <img src="images/486084074_1218120633647635_3369984115191768115_n.jpg" alt="Detailed building work by MPH Builders in Tasmania" loading="lazy">
+          <img src="images/484038280_1209103464549352_5282160341747105381_n.jpg" alt="Tasmanian home construction project by MPH Builders" loading="lazy">
+        </div>
+        <div class="about-content">
+          <div class="label">About Us</div>
+          <h2>A Local Builder You Can Actually Talk To</h2>
+          <p>MPH Builders started in 2004 with two blokes, a ute and a commitment to doing things right. Over twenty years later, Mick Hernyk and his team of 11 — plus a network of trusted local subcontractors — are still building across every corner of Tasmania.</p>
+          <p>We're not a volume builder churning out cookie-cutter homes. We're the kind of builders who answer the phone, explain what's happening, and make sure you're happy with the result. That's how we've kept going for two decades — by treating every job like our name's on it. Because it is.</p>
+          <p>In 2013, Mick was awarded the Master Builders Tasmania Young Builder of the Year — a recognition of the quality and professionalism that goes into every project we take on.</p>
+          <div class="about-stats">
+            <div class="stat-item">
+              <div class="stat-number">20+</div>
+              <div class="stat-label">Years Building</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">11</div>
+              <div class="stat-label">Team Members</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">100%</div>
+              <div class="stat-label">Tasmanian Owned</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section class="portfolio" id="portfolio">
+    <div class="container">
+      <div class="section-header">
+        <div class="label">Our Work</div>
+        <h2>Built in Tasmania, Built to Last</h2>
+        <p>A few of the homes and projects we've delivered across the state — from new builds in Launceston to coastal homes in Coles Bay.</p>
+      </div>
+      <div class="portfolio-grid">
+        <a href="images/476891024_4026091244293438_8917841908609395506_n.jpg"><img src="images/476891024_4026091244293438_8917841908609395506_n.jpg" alt="Custom new home build Tasmania" loading="lazy"></a>
+        <a href="images/487514122_1224299696363062_490510914438059088_n.jpg"><img src="images/487514122_1224299696363062_490510914438059088_n.jpg" alt="Residential construction project Launceston" loading="lazy"></a>
+        <a href="images/486612379_1220578193401879_3615910060158793331_n.jpg"><img src="images/486612379_1220578193401879_3615910060158793331_n.jpg" alt="Home extension and renovation Tasmania" loading="lazy"></a>
+        <a href="images/486084074_1218120633647635_3369984115191768115_n.jpg"><img src="images/486084074_1218120633647635_3369984115191768115_n.jpg" alt="Quality home builder Hobart region" loading="lazy"></a>
+        <a href="images/484038280_1209103464549352_5282160341747105381_n.jpg"><img src="images/484038280_1209103464549352_5282160341747105381_n.jpg" alt="Tasmanian residential building project" loading="lazy"></a>
+        <a href="images/468220171_18023926856531429_4138000705472471590_n.jpg"><img src="images/468220171_18023926856531429_4138000705472471590_n.jpg" alt="New home construction southern Tasmania" loading="lazy"></a>
+        <a href="images/482087431_1200007342125631_4675229592007320712_n.jpg"><img src="images/482087431_1200007342125631_4675229592007320712_n.jpg" alt="Custom home builder Tasmania" loading="lazy"></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <div class="label">What Our Clients Say</div>
+        <h2>Real People, Real Builds</h2>
+        <p>We let our work and our clients speak for themselves.</p>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote>"We always found them to be very open and trustworthy. All expenses were 100% transparent… we always knew exactly what we were getting for our money."</blockquote>
+          <div class="testimonial-author">Kent &amp; Kelly Wyllie</div>
+          <div class="testimonial-role">New Home Build</div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote>"It has been a complicated build on a steep narrow block, which has required thinking outside the square. The building work is to a high standard."</blockquote>
+          <div class="testimonial-author">Kaye &amp; Nick Gee</div>
+          <div class="testimonial-role">Residential Project, The Gardens</div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote>"Mick has always demonstrated a sound business style with ethics beyond question. We have complete trust in Mick."</blockquote>
+          <div class="testimonial-author">Rossetto Tiles</div>
+          <div class="testimonial-role">Industry Partner &amp; Client</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Preferred Contractor -->
+  <section class="contractors">
+    <div class="container">
+      <div class="section-header">
+        <div class="label">Trusted By</div>
+        <h2>Preferred Contractor For</h2>
+        <p>We're proud to be the go-to builder for some of Tasmania's most respected organisations.</p>
+      </div>
+      <div class="contractor-logos">
+        <span>Tasmanian Education Department</span>
+        <span>State Growth Tasmania</span>
+        <span>Meander Valley Council</span>
+        <span>Pfeiffer Cranes</span>
+        <span>Claim Central Consolidated</span>
+        <span>Lotus Doors</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Full Contact Form -->
+  <section class="cta-section" id="contact">
+    <div class="container">
+      <div class="cta-inner">
+        <div class="label">Let's Talk About Your Build</div>
+        <h2>Ready to Get Started?</h2>
+        <p>Whether you've got detailed plans or just a rough idea, we're happy to have a yarn about what you're after. Fill in the form below and Mick or one of the team will get back to you — usually within a business day.</p>
+        <div class="full-form">
+          <form action="/contact-us" method="post">
+            <div class="form-row-3">
+              <div class="form-group">
+                <label for="full-first">First Name *</label>
+                <input type="text" id="full-first" name="first_name" placeholder="First name" required>
+              </div>
+              <div class="form-group">
+                <label for="full-last">Last Name *</label>
+                <input type="text" id="full-last" name="last_name" placeholder="Last name" required>
+              </div>
+              <div class="form-group">
+                <label for="full-phone">Phone *</label>
+                <input type="tel" id="full-phone" name="phone" placeholder="0400 000 000" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="full-email">Email Address *</label>
+                <input type="email" id="full-email" name="email" placeholder="you@example.com" required>
+              </div>
+              <div class="form-group">
+                <label for="full-suburb">Suburb / Location</label>
+                <input type="text" id="full-suburb" name="suburb" placeholder="e.g. Sandy Bay, Launceston">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="full-job">Type of Job *</label>
+                <select id="full-job" name="job_type" required>
+                  <option value="" disabled selected>Select your project type</option>
+                  <option value="new-home">New Home Build</option>
+                  <option value="renovation">Renovation or Extension</option>
+                  <option value="heritage">Heritage Listed Work</option>
+                  <option value="commercial">Commercial Build</option>
+                  <option value="outdoor">Outdoor Living (Deck, Pergola)</option>
+                  <option value="site-works">Site Works</option>
+                  <option value="maintenance">Maintenance</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="full-budget">Rough Budget Range</label>
+                <select id="full-budget" name="budget">
+                  <option value="" disabled selected>Select if known</option>
+                  <option value="under-100k">Under $100,000</option>
+                  <option value="100-250k">$100,000 – $250,000</option>
+                  <option value="250-500k">$250,000 – $500,000</option>
+                  <option value="500k-1m">$500,000 – $1,000,000</option>
+                  <option value="over-1m">Over $1,000,000</option>
+                  <option value="unsure">Not sure yet</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="full-timeline">When Are You Looking to Start?</label>
+                <select id="full-timeline" name="timeline">
+                  <option value="" disabled selected>Select a timeframe</option>
+                  <option value="asap">As soon as possible</option>
+                  <option value="1-3months">1–3 months</option>
+                  <option value="3-6months">3–6 months</option>
+                  <option value="6-12months">6–12 months</option>
+                  <option value="just-planning">Just planning at this stage</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="full-plans">Do You Have Plans?</label>
+                <select id="full-plans" name="has_plans">
+                  <option value="" disabled selected>Select one</option>
+                  <option value="yes-approved">Yes — council approved</option>
+                  <option value="yes-draft">Yes — in draft</option>
+                  <option value="no-need-help">No — I need help with that</option>
+                  <option value="not-yet">Not yet</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="full-details">Tell Us About Your Project *</label>
+              <textarea id="full-details" name="details" placeholder="Give us the rundown — what are you building or changing? Any specific requirements, site conditions, or things we should know about?" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn-primary" style="max-width: 320px; margin: 0 auto;">
+              Submit Your Enquiry
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="https://www.mphbuilders.com.au/images/Logo-small.png" alt="MPH Builders Tasmania" width="160" height="46">
+          <p>Family-owned Tasmanian builders since 2004. Delivering quality new homes, renovations and commercial builds from Hobart to Launceston and everywhere in between.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="/services">New Homes</a></li>
+            <li><a href="/services">Renovations &amp; Extensions</a></li>
+            <li><a href="/services">Heritage Listed Work</a></li>
+            <li><a href="/services">Commercial Builds</a></li>
+            <li><a href="/services">Outdoor Living</a></li>
+            <li><a href="/services">Maintenance</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/testimonials">Testimonials</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Get in Touch</h4>
+          <ul>
+            <li><a href="tel:0364342899">(03) 6344 2899</a></li>
+            <li><a href="tel:0418120939">0418 120 939</a></li>
+            <li><a href="mailto:info@mphbuilders.com.au">info@mphbuilders.com.au</a></li>
+            <li>65 Meander Valley Hwy<br>Prospect TAS 7250</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 MPH Builders Pty Ltd. All Rights Reserved.</span>
+        <span>ABN registered &middot; Master Builders Tasmania Member &middot; Lic. Builder</span>
+      </div>
+    </div>
+  </footer>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "name": "MPH Builders Pty Ltd",
+    "url": "https://www.mphbuilders.com.au",
+    "logo": "https://www.mphbuilders.com.au/images/Logo-small.png",
+    "image": "https://www.mphbuilders.com.au/images/476891024_4026091244293438_8917841908609395506_n.jpg",
+    "description": "Family-owned Tasmanian builders since 2004. New homes, renovations, heritage work, commercial builds and maintenance across Hobart, Launceston and all of Tasmania.",
+    "telephone": "+61364342899",
+    "email": "info@mphbuilders.com.au",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "65 Meander Valley Highway",
+      "addressLocality": "Prospect",
+      "addressRegion": "TAS",
+      "postalCode": "7250",
+      "addressCountry": "AU"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -41.4931,
+      "longitude": 147.1225
+    },
+    "areaServed": [
+      {"@type": "State", "name": "Tasmania"},
+      {"@type": "City", "name": "Hobart"},
+      {"@type": "City", "name": "Launceston"}
+    ],
+    "foundingDate": "2004",
+    "founder": {"@type": "Person", "name": "Mick Hernyk"},
+    "numberOfEmployees": "11",
+    "award": "Master Builders Tasmania Young Builder of the Year 2013",
+    "openingHours": "Mo-Fr 07:30-16:00",
+    "priceRange": "$$"
+  }
+  </script>
+
+</body>
+</html>
